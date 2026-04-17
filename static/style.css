@@ -5,7 +5,48 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
-/* NAV */
+header {
+    padding: 20px;
+}
+
+nav a {
+    margin: 10px;
+    color: gold;
+    text-decoration: none;
+}
+
+.slogan span {
+    color: white;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.cta a {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 15px;
+    color: gold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* NAV HOVER */
 nav a {
     position: relative;
     color: gold;
@@ -33,58 +74,6 @@ nav a:hover {
     color: white;
 }
 
-/* SLOGAN */
-.slogan span {
-    color: white;
-    text-decoration: underline;
-    margin: 5px;
-}
-
-/* BUTTON */
-.cta a {
-    background: gold;
-    color: black;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.cta a:hover {
-    background: white;
-}
-
-/* ICONS */
-.social-icons i {
-    font-size: 30px;
-    margin: 15px;
-    color: gold;
-    transition: 0.3s;
-}
-
-.social-icons i:hover {
-    color: white;
-    transform: scale(1.2);
-}
-
-/* GALLERY */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* 🔥 ZOOM EFFECT */
-.gallery img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
 
 /* FADE IN */
 .fade-in {
