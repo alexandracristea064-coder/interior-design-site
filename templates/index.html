@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Maison Alexandra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="fade-in">
+    <div class="header-container">
+        <div>
+            <h1>Maison Alexandra</h1>
+            <p class="slogan">
+    <span>Pure.</span>
+    <span>Elegant.</span>
+    <span>Luxury.</span>
+</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="/">Acasă</a>
+        <a href="/gallery">Galerie</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <h2>Design Interior de Lux</h2>
+    <p>Transformăm spațiile în experiențe elegante</p>
+</section>
+
+<!-- 🔥 BUTON CONTACT (AICI E POZIȚIA CORECTĂ) -->
+<div class="cta fade-in">
+    <a href="#" onclick="event.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+    Contactează-ne
+</a>
+</div>
+
+<!-- CONTACT -->
+<div class="social-icons fade-in">
+    <a href="https://wa.me/0751778738" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://instagram.com/aalexandraa.i" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexandracristea064@gmail.com" target="_blank">
+    <i class="fas fa-envelope"></i>
+</a>
+</div>
+<section class="contact fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>📍 Bulevardul Mamaia 335B, Constanța</p>
+    <p>📞 0751778738</p>
+    <p>🌐 maisonalexandra.com</p>
+</section>
+
+<!-- CARTE DE VIZITĂ -->
+<section class="card-preview fade-in">
+    <h2>Brandul nostru</h2>
+    <img src="/static/logo.png">
+</section>
+
+</body>
+</html>
