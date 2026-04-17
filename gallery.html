@@ -3,67 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Galerie</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <!-- CSS CORECT -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
     <h1>Galerie</h1>
+
     <nav>
-        <a href="/">Acasă</a>
-        <a href="/gallery">Galerie</a>
+        <a href="index.html">Acasă</a>
+        <a href="gallery.html">Galerie</a>
     </nav>
 </header>
 
-<section class="gallery hidden">
+<section class="gallery">
 
-    <div class="card hidden">
+    <div class="card">
         <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
     </div>
 
-    <div class="card hidden">
+    <div class="card">
         <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
     </div>
 
-    <div class="card hidden">
+    <div class="card">
         <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
     </div>
 
-    <div class="card hidden">
-        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-    </div>
-
-    <div class="card hidden">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-    </div>
-
-    <div class="card hidden">
-        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
-    </div>
-
-    <div class="card hidden">
+    <div class="card">
         <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
     </div>
 
-    <div class="card hidden">
-        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5">
-    </div>
-
 </section>
-
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-    });
-});
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>

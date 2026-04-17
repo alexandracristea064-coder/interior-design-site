@@ -4,30 +4,17 @@
     <meta charset="UTF-8">
     <title>Maison Alexandra</title>
 
-    <!-- CSS -->
+    <!-- CSS CORECT (fara Flask) -->
     <link rel="stylesheet" href="static/style.css">
 
-    <!-- ICONITE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- FONTURI -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="fade-in">
-    <div class="header-container">
-        <div>
-            <h1>Maison Alexandra</h1>
-
-            <p class="slogan">
-                <span>Pure.</span>
-                <span>Elegant.</span>
-                <span>Luxury.</span>
-            </p>
-        </div>
-    </div>
+<header>
+    <h1>Maison Alexandra</h1>
 
     <nav>
         <a href="index.html">Acasă</a>
@@ -35,21 +22,17 @@
     </nav>
 </header>
 
-<section class="hero fade-in">
+<section class="hero">
     <h2>Design Interior de Lux</h2>
     <p>Transformăm spațiile în experiențe elegante</p>
 </section>
 
-<!-- BUTON CONTACT -->
-<div class="cta fade-in">
-    <a href="#" onclick="event.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
-        Contactează-ne
-    </a>
+<div class="cta">
+    <a href="#contact">Contactează-ne</a>
 </div>
 
-<!-- ICONITE -->
-<div class="social-icons fade-in">
-    <a href="https://wa.me/40751778738" target="_blank">
+<div class="social-icons">
+    <a href="https://wa.me/0751778738" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -57,21 +40,18 @@
         <i class="fab fa-instagram"></i>
     </a>
 
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexandracristea064@gmail.com" target="_blank">
+    <a href="mailto:alexandracristea064@gmail.com">
         <i class="fas fa-envelope"></i>
     </a>
 </div>
 
-<!-- CONTACT -->
-<section class="contact fade-in" id="contact">
+<section id="contact">
     <h2>Contact</h2>
-    <p>📍 Bulevardul Mamaia 335B, Constanța</p>
+    <p>📍 Constanța</p>
     <p>📞 0751778738</p>
-    <p>🌐 maisonalexandra.com</p>
 </section>
 
-<!-- LOGO -->
-<section class="card-preview fade-in">
+<section class="card-preview">
     <h2>Brandul nostru</h2>
     <img src="static/logo.png">
 </section>
