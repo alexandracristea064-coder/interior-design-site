@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Maison Alexandra</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- ICONITE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- FONTURI -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,17 +20,18 @@
     <div class="header-container">
         <div>
             <h1>Maison Alexandra</h1>
+
             <p class="slogan">
-    <span>Pure.</span>
-    <span>Elegant.</span>
-    <span>Luxury.</span>
-</p>
+                <span>Pure.</span>
+                <span>Elegant.</span>
+                <span>Luxury.</span>
+            </p>
         </div>
     </div>
 
     <nav>
-        <a href="/">Acasă</a>
-       href="gallery.html"
+        <a href="index.html">Acasă</a>
+        <a href="gallery.html">Galerie</a>
     </nav>
 </header>
 
@@ -34,16 +40,16 @@
     <p>Transformăm spațiile în experiențe elegante</p>
 </section>
 
-<!-- 🔥 BUTON CONTACT (AICI E POZIȚIA CORECTĂ) -->
+<!-- BUTON CONTACT -->
 <div class="cta fade-in">
     <a href="#" onclick="event.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
-    Contactează-ne
-</a>
+        Contactează-ne
+    </a>
 </div>
 
-<!-- CONTACT -->
+<!-- ICONITE -->
 <div class="social-icons fade-in">
-    <a href="https://wa.me/0751778738" target="_blank">
+    <a href="https://wa.me/40751778738" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -52,9 +58,11 @@
     </a>
 
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alexandracristea064@gmail.com" target="_blank">
-    <i class="fas fa-envelope"></i>
-</a>
+        <i class="fas fa-envelope"></i>
+    </a>
 </div>
+
+<!-- CONTACT -->
 <section class="contact fade-in" id="contact">
     <h2>Contact</h2>
     <p>📍 Bulevardul Mamaia 335B, Constanța</p>
@@ -62,10 +70,10 @@
     <p>🌐 maisonalexandra.com</p>
 </section>
 
-<!-- CARTE DE VIZITĂ -->
+<!-- LOGO -->
 <section class="card-preview fade-in">
     <h2>Brandul nostru</h2>
-    <img src="/static/logo.png">
+    <img src="static/logo.png">
 </section>
 
 </body>
