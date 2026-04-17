@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <title>Galerie</title>
 
-    <!-- CSS CORECT -->
-    <link rel="stylesheet" href="static/style.css">
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            text-align: center;
+        }
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        nav a {
+            margin: 10px;
+            color: gold;
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,36 +45,12 @@
 
 <section class="gallery">
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-    </div>
-    <div class="card">
-    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-</div>
-
-<div class="card">
-    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5">
-</div>
-
-<div class="card">
     <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
-</div>
-
-<div class="card">
     <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
-</div>
+    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5">
+    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2f7d">
 
 </section>
 
