@@ -1,280 +1,48 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
     background: black;
     color: white;
-}
-
-/* HEADER */
-header {
-    background: black;
     text-align: center;
-    padding: 30px 20px;
-    border-bottom: 1px solid gold;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-    color: gold; /* 🔥 asta e important */
-}
-.slogan {
-    word-spacing: 4px;   /* spațiu natural între cuvinte */
+header {
+    padding: 20px;
 }
 
-.slogan span::after {
-    height: 0.8px;
-    opacity: 0.8;
+nav a {
+    margin: 10px;
+    color: gold;
+    text-decoration: none;
 }
 
 .slogan span {
     color: white;
     text-decoration: underline;
-    margin: 0 5px;
-}
-
-/* NAV */
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    color: gold;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
-    transition: 0.3s;
-}
-
-/* SUBLINIERE */
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: gold;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
-
-/* HOVER NAV */
-nav a:hover {
-    color: white;
-    transform: scale(1.1);
-    text-shadow: 0 0 10px gold;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511") no-repeat center/cover;
-}
-
-/* BUTON CONTACT */
-.cta {
-    text-align: center;
-    margin: 40px 0 10px 0;
+    margin: 5px;
 }
 
 .cta a {
     background: gold;
     color: black;
-    padding: 12px 25px;
-    border-radius: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.cta a:hover {
-    background: white;
-    box-shadow: 0 0 20px gold;
-}
-
-/* ICONITE PREMIUM */
-.social-icons {
-    text-align: center;
-    margin-bottom: 5px;
-}
-.social-icons a {
-    font-size: 24px;
-    margin: 12px;
-    color: gold;
-    background: rgba(255, 215, 0, 0.1);
-    padding: 14px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: black;
-    background: gold;
-    transform: scale(1.2);
-    box-shadow: 0 0 20px gold;
 }
 
 .social-icons i {
-    font-size: 28px;
-    color: gold;
+    font-size: 30px;
     margin: 15px;
-    transition: 0.3s;
+    color: gold;
 }
 
-.social-icons i:hover {
-    color: white;
-    transform: scale(1.2);
-}
-
-/* CONTACT */
-.contact {
-    text-align: center;
-    padding: 20px 20px;
-    background: black;
-}
-
-.contact h2 {
-    margin-bottom: 10px;
-}
-
-.contact p {
-    margin: 5px 0;
-}
-
-/* GALERIE */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    padding: 50px 20px;
 }
 
-.card {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
+.gallery img {
+    width: 200px;
+    margin: 10px;
     border-radius: 10px;
-    position: relative;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.4s ease;
-}
-
-.card:hover {
-    z-index: 10;
-    transform: scale(1.05);
-}
-
-.card:hover img {
-    transform: scale(1.2);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
-}
-
-/* BRAND */
-.card-preview {
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.card-preview h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-.card-preview h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: gold;
-    margin: 10px auto;
-}
-
-.card-preview img {
-    width: 160px;
-    border-radius: 20px;
-
-    background: transparent; /* scoate albul */
-    padding: 0;              /* scoate spațiul */
-
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
-    transition: 0.3s;
-}
-.card-preview img:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 10px gold);
-}
-/* ANIMATII */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* TITLURI */
-h1, h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 1px;
-    color: white;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
-}
-/* FADE IN ON SCROLL */
-.hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-.slogan {
-    color: white; /* schimbat din gold */
-    font-family:'Montserrat Bold', serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
-}
-
-.slogan span {
-    position: relative;
-    display: inline-block;
-    margin: 0 3px;
-}
-
-/* linie gold sub fiecare cuvant */
-.slogan span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 1px;
-    background: gold; /* rămâne gold */
 }
