@@ -5,44 +5,97 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
-header {
-    padding: 20px;
-}
-
+/* NAV */
 nav a {
-    margin: 10px;
+    position: relative;
     color: gold;
     text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
 }
 
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: gold;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* SLOGAN */
 .slogan span {
     color: white;
     text-decoration: underline;
     margin: 5px;
 }
 
+/* BUTTON */
 .cta a {
     background: gold;
     color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 12px 25px;
+    border-radius: 25px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
+.cta a:hover {
+    background: white;
+}
+
+/* ICONS */
 .social-icons i {
     font-size: 30px;
     margin: 15px;
     color: gold;
+    transition: 0.3s;
 }
 
+.social-icons i:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* GALLERY */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* 🔥 ZOOM EFFECT */
 .gallery img {
     width: 200px;
     margin: 10px;
     border-radius: 10px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* FADE IN */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
